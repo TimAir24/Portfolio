@@ -1,0 +1,385 @@
+body {
+    background-color: #ffffff;
+    margin: 0;
+}
+
+/* icon stylings */
+.topnavs a {
+    display: inline-block;
+    color: white;
+    background: #464949;
+    font-style: normal;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+/* topnav stylings*/
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #000000;
+    color: white;
+}
+
+.hero_section01 {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(216, 117, 24);
+
+}
+
+/* hero section stylings*/
+#hero_section h1,
+h2 {
+    text-align: center;
+
+}
+
+#hero_section h2 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    padding-bottom: 100px;
+    color: white;
+}
+
+#hero_section h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 250%;
+}
+
+#section_header {
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+}
+
+/* end of hero section styling*/
+
+/* project main section grid styling*/
+
+#Column_grid {
+    margin-top: 50px;
+    display: grid;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#Column_grid p {
+    width: 360px;
+}
+
+#Column_grid div {
+    padding-bottom: 50px;
+}
+
+#Column_grid img {
+    width: 360px;
+    height: 225px;
+}
+
+#Column_grid button {
+    background-color: rgb(68, 68, 68);
+    border: none;
+    padding: 10px;
+    margin-left: 10em;
+}
+
+#Column_grid a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/* small screens*/
+
+@media screen and (min-width: 100px) {
+
+    .horizontal_menu {
+        display: none;
+    }
+
+    #hero_section {
+        width: 100%;
+        height: 200px;
+        padding-top: 20px;
+        background-color: rgb(216, 117, 24);
+    }
+
+    .hero_section01 {
+        padding-bottom: 100px;
+    }
+
+    #Column_grid {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        gap: 70px;
+        margin-top: 80px;
+    }
+
+    /*footer section styling*/
+    footer {
+        width: 100%;
+        height: 200px;
+        background-color: #464949;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    footer #vertical_menu {
+        float: right;
+    }
+
+    footer #vertical_menu a {
+        display: flex;
+        flex-direction: column;
+        padding-right: 2em;
+        padding-bottom: 15px;
+        text-decoration: none;
+        color: white;
+    }
+
+    footer #social_media {
+        display: flex;
+        width: 20px;
+        flex-direction: row;
+    }
+
+    footer p {
+        color: white;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    footer div {
+        padding: 5px;
+    }
+
+    footer div img {
+        padding: 5px;
+        width: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .horizontal_menu {
+        display: none;
+    }
+
+    #hero_section {
+        width: 100%;
+        height: 200px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        background-color: rgb(216, 117, 24);
+    }
+
+    .hero_section01 {
+        padding-bottom: 100px;
+    }
+
+
+    /* end of nav bar styling */
+    #Column_grid {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: center;
+        gap: 100px;
+        padding-top: 50px;
+    }
+
+    #hero_section {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #hero_section h1,
+    h2 {
+        text-align: center;
+
+    }
+
+    #hero_section h2 {
+        color: white;
+    }
+
+    #hero_section h1 {
+        color: white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 300%;
+    }
+
+
+    /*footer section styling*/
+    footer {
+        width: auto;
+        height: 200px;
+        position: static;
+        bottom: 0;
+        background-color: #464949;
+        padding-top: 20px;
+    }
+
+    footer #vertical_menu {
+        float: right;
+    }
+
+    footer #vertical_menu a {
+        display: flex;
+        flex-direction: column;
+        padding-right: 10em;
+        padding-bottom: 15px;
+        text-decoration: none;
+        color: white;
+    }
+
+    footer #social_media {
+        display: flex;
+        width: 50px;
+        flex-direction: row;
+    }
+
+    footer p {
+        color: white;
+        text-align: center;
+    }
+
+    footer div {
+        padding: 5px;
+    }
+
+    footer div img {
+        padding: 20px;
+    }
+
+
+}
+
+/* computer screens */
+
+@media screen and (min-width: 1285px) {
+
+    /* mobile nav visibility*/
+
+    .topnav {
+        display: none;
+    }
+
+    /* horizontal menu styling */
+
+    .horizontal_menu {
+        margin-top: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background: black;
+
+    }
+
+    .active {
+        text-decoration: none;
+        padding-right: 40em;
+    }
+
+    #large_screens a {
+        text-decoration: none;
+        color: white;
+        padding-right: 50px;
+    }
+
+    /* hero section styling*/
+
+    #hero_section {
+        height: 300px;
+        margin: 0;
+    }
+
+    /* culumn grid home */
+
+    #Column_grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        gap: 100px;
+    }
+
+
+    /*footer section styling*/
+    footer {
+        width: auto;
+        height: 300px;
+        background-color: #464949;
+        padding-top: 20px;
+    }
+
+    footer #vertical_menu {
+        float: right;
+    }
+
+    footer #vertical_menu a {
+        display: flex;
+        flex-direction: column;
+        padding-right: 30em;
+        padding-bottom: 15px;
+        text-decoration: none;
+        color: white;
+    }
+
+    footer #social_media {
+        display: flex;
+        width: 20px;
+        padding-left: 30em;
+        flex-direction: column;
+    }
+
+    footer p {
+        color: white;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    footer div {
+        padding: 5px;
+    }
+
+    footer div img {
+        padding-bottom: 10px;
+    }
+
+
+}

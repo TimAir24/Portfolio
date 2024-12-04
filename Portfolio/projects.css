@@ -1,0 +1,21 @@
+#Column_gridVertical {
+    display: grid;
+    grid-template-columns: auto;
+    justify-items: center;
+    padding: 50px;
+}
+
+#title_column {
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+#Column_gridVertical img {
+    width: 100%;
+}
+
+#Column_gridVertical h1,
+p {
+    text-align: center;
+}

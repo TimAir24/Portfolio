@@ -1,0 +1,125 @@
+/* about_section class styling*/
+#about_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 15px 0 15px;
+}
+
+#about_section p {
+    width: 360px;
+}
+
+#about_section button {
+    width: 100px;
+    border: none;
+    padding: 10px;
+}
+
+#about_section img {
+    width: 400px;
+}
+
+#about_section a {
+    text-decoration: none;
+    color: black;
+}
+
+/* end of about_section class styling*/
+@media screen and (min-width: 375px) {
+
+    #about_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 360px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        align-items: center;
+    }
+
+    #about_section img {
+        width: 300px;
+    }
+
+    #about_section button {
+        border: none;
+        padding: 10px;
+    }
+
+    #about_section p {
+        width: 250px;
+        font-size: 100%;
+    }
+
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    #about_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 360px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 50px 0 100px 32%;
+        align-items: center;
+    }
+
+    #about_section img {
+        width: 600px;
+    }
+
+    #about_section button {
+        border: none;
+        padding: 10px;
+    }
+
+    #about_section p {
+        width: 400px;
+        font-size: 150%;
+    }
+
+}
+
+/* computer screens */
+
+@media screen and (min-width: 1285px) {
+
+    /* about section home*/
+
+    #about_section {
+        flex-direction: row;
+        align-items: center;
+        width: 600px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        margin: 50px 0 100px 35%;
+    }
+
+    #about_section p {
+        padding-left: 50px;
+        font-size: 150%;
+    }
+
+    #about_section img {
+        width: 600px;
+        height: 400px;
+    }
+
+    #about_section button {
+        border: none;
+        padding: 10px;
+        margin-left: 50px;
+    }
+
+    #about_section img {
+        width: auto;
+    }
+
+}
